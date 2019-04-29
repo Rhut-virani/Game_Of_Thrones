@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'game_of_thronesregular';
+    src: url('./fonts/game_of_thrones-webfont.woff2') format('woff2'),
+         url('./fonts/game_of_thrones-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'game_of_thronesregular', Fallback, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    color: white;
+}
+
+.color{
+    background: url("./static/photos/logo/bg.png");
+    background-color: #565656;
+}
+
+
+.heading{
+    width: 100vw;
+    height: 40vh;
+    box-sizing: border-box;
+    padding: 2% 0%;
+    text-align: center;
+    .title, .subtitle{
+        margin-top: 2%;
+    }
+    .title{
+        font-weight: 100;    
+        a {
+            text-decoration: none;
+            color: white;
+            letter-spacing: 0.5rem;
+        }
+    }
+    .subtitle{
+        font-weight: 100;    
+    }
+    h5{
+        letter-spacing: 0.2rem;
+    }
+    
+}
+.timer{
+    width: 100vw;
+    height: 25vh;
+    box-sizing: border-box;
+    padding: 2% 0%;
+    text-align: center;
+    div{
+        font-family: 'Cormorant Unicase', serif;
+        font-size: 2.5rem;
+        display: inline-block;
+        margin: 2%;
+    }
+    .days, .hours, .minutes, .seconds{
+        max-width: 250px;
+        width: 250px;
+    }
+}
+.logo{
+    width: 25vw;
+    height: 25vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: url("./static/photos/logo/stark-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    z-index: -1;
+    opacity: 0.2;
+
+}
