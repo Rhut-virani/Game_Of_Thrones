@@ -118,7 +118,10 @@ body {
     }
     .small{
         font-size: 1rem;
-        // color: 
+        opacity: 0;
+    }
+    .text{
+        opacity: 0;
     }
 }
 .logo{

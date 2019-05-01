@@ -95,6 +95,7 @@ var quotes = [
     qNameText = '',
     logoUrl = '',
     logoColor = ''
+
     
 
 
@@ -143,6 +144,11 @@ $(document).ready( ()=>{
         }, interval);
 
     }
+    animatenumbers = () => {
+        var an = new TimelineMax()
+            .to('.small', 0.25, {autoAlpha:1})
+            .to('.text', 1, {autoAlpha:1})
+    }
 
     onRepeat = () => {
         repeatCount++;
@@ -184,12 +190,12 @@ $(document).ready( ()=>{
     }
 
     setInterval(() => {
+        animatenumbers();
         (s % 20 === 0) ? zero=true: false;
         if(firstTime && zero){
             onRepeat();
             firstTime = false;
         }
     }, interval);
-
 
 })
