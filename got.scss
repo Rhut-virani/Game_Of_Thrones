@@ -6,6 +6,34 @@
     font-style: normal;
 
 }
+@mixin phone-only {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  
+  @mixin phone-landscape-only {
+    @media (min-width: 600px) and (max-width: 900px) and (orientation: landscape) {
+      @content;
+    }
+  }
+  @mixin tablet-portrait-up {
+    @media (min-width: 600px) and (orientation: portrait) {
+      @content;
+    }
+  }
+  
+  @mixin tablet-landscape-up {
+    @media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+      @content;
+    }
+  }
+  
+  @mixin desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
 
 body {
     font-family: 'game_of_thronesregular', Fallback, sans-serif;
@@ -26,19 +54,33 @@ body {
     box-sizing: border-box;
     padding: 2% 0%;
     text-align: center;
+    @include phone-only{
+        padding: 2% 0;
+    }
     .title, .subtitle{
-        margin-top: 2%;
+        margin: 5vh 0;
     }
     .title{
         font-weight: 100;    
-        a {
-            text-decoration: none;
-            color: white;
+        letter-spacing: 0.5rem;
+        @include phone-only{
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+        }
+        @include tablet-portrait-up{
+            font-size: 1.5rem;
             letter-spacing: 0.5rem;
+
         }
     }
     .subtitle{
         font-weight: 100;    
+        @include phone-only{
+            font-size: 0.7rem;
+        }
+        @include tablet-portrait-up{
+            font-size: 1.2rem
+        }
     }
     h5{
         letter-spacing: 0.2rem;
@@ -53,13 +95,30 @@ body {
     text-align: center;
     div{
         font-family: 'Cormorant Unicase', serif;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         display: inline-block;
-        margin: 2%;
+        margin: 0 2%;
+        @include phone-only{
+            font-size: 3rem;
+        }
+        @include tablet-portrait-up{
+            font-size: 4.5rem;
+        }
+        @include tablet-landscape-up{
+            font-size: 4rem;
+        }
     }
     .days, .hours, .minutes, .seconds{
         max-width: 250px;
-        width: 250px;
+        min-width: 125px;
+        width: auto;
+        @include desktop-up{
+            width: 250px;
+        }
+    }
+    .small{
+        font-size: 1rem;
+        // color: 
     }
 }
 .logo{
@@ -75,5 +134,46 @@ body {
     background-position: center; 
     z-index: -1;
     opacity: 0.2;
+    @include phone-only{
+        width: 50vw;
+        height: 50vw;
+    }
+    @include phone-landscape-only{
+        width: 25vw;
+        height: 25ve;
+    }
+
+}
+.quotes{
+    width: 100vw;
+    height: 35vh;
+    text-align: center;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 2rem;
+    padding: 1%;
+    position: relative;
+    box-sizing: border-box;
+
+    @include phone-only{
+        font-size: 1.2rem;
+    }
+    @include tablet-portrait-up{
+        font-size: 2rem;
+    }
+    div{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 75vw;
+        transform: translate(-50%, -50%);
+        .q{
+            font-style: italic;
+
+        }
+        .qName{
+            float: right;
+        }
+
+    }
 
 }

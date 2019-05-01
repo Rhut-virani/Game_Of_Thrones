@@ -1,39 +1,100 @@
 var quotes = [
                 [
-                    "'When the snows fall and the white winds blow, the lone wolf dies but the pack survives.' - Ned Stark",
-                    "'There is only one war that matters. The Great War. And it is here.' - Jon Snow",
-                    "'Nothing's worth anything to dead men.' - Arya Stark",
-                    "'You'Re Going To Die Tomorrow, Lord Bolton. Sleep Well.' - Sansa Stark",
-                    "'The only time a man can be brave is when he is afraid.' - Ned Stark",
-                    "'Who taught you to do that?', 'No one' - Arya Stark",
-                    "‘Everything before the word ‘but’ is horse-shit.’ - Ned Stark",
-                    "'Thank you for all your many lessons, lord Baelish. I will never forget them.' - Sansa Stark",
-                    "'What Do We Say to the God of Death?' 'Not Today' - Arya Stark",
-                    "'The man who passes the sentence should swing the sword.' — Ned Stark",
-                    "'I grew up with soldiers. I learned how to die a long time ago.' — Ned Stark",
-                    "'I'M A Slow Learner, It'S True. But I Learn.' - Sansa Stark",
-                    "'When people ask you what happened here, tell them the North remembers. Tell them winter came for House Frey.' - Arya Stark",
+                    ['./static/photos/logo/stark-logo.png','#565656'],
+                    ["'When the snows fall and the white winds blow, the lone wolf dies but the pack survives.'" , "- Ned Stark"],
+                    ["'There is only one war that matters. The Great War. And it is here.'" , "- Jon Snow"],
+                    ["'Nothing's worth anything to dead men.'" , "- Arya Stark"],
+                    ["'You'Re Going To Die Tomorrow, Lord Bolton. Sleep Well.'", "- Sansa Stark"],
+                    ["'The only time a man can be brave is when he is afraid.'", "- Ned Stark"],
+                    ["'Who taught you to do that?', 'No one'","- Arya Stark"],
+                    ["'Everything before the word ‘but’ is horse-shit.'", "- Ned Stark"],
+                    ["'Thank you for all your many lessons, lord Baelish. I will never forget them.'"," - Sansa Stark"],
+                    ["'What Do We Say to the God of Death?' 'Not Today'", "- Arya Stark"],
+                    ["'The man who passes the sentence should swing the sword.'", "— Ned Stark"],
+                    ["'I grew up with soldiers. I learned how to die a long time ago.'", "— Ned Stark"],
+                    ["'I'M A Slow Learner, It'S True. But I Learn.'" ,"- Sansa Stark"],
+                    ["'When people ask you what happened here, tell them the North remembers. Tell them winter came for House Frey.'","- Arya Stark"],
+                    ["'Nothing isn’t better or worse than anything. Nothing is just nothing.'","- Arya Stark"],
+                    
                 ],
                 [
-                    "'Lannisters aren't the only ones who pay their debts.' -Oberyn Martell",
-                    "'It is rare to meet a Lannister who shares my enthusiasm for dead Lannisters.' -Oberyn Martell",
+                    ['./static/photos/logo/martell-logo.png','#e12812'],
+                    ["'Lannisters aren't the only ones who pay their debts.'", "-Oberyn Martell"],
+                    ["'It is rare to meet a Lannister who shares my enthusiasm for dead Lannisters.'", "-Oberyn Martell"],
                 ],
-                [" "],
-                [" "],
-                [" "],
-                [" "],
-                [" "],
-                [" "],
+                [   
+                    ['./static/photos/logo/tully-logo.png','#00173d'],
+                    ["'As long as I'm standing, the war is not over.'", "-Blackfish"],
+                    ["'Bargaining with oathbreakers is like building on quicksand.'", "-Blackfish "],
+                    ["'I haven't had a proper swordfight in years. I expect I'll make a damn fool of myself.'", "-Blackfish"]
+                
+                ],
                 [
-                    "'Never forget what you are. The rest of the world will not. Wear it like armor, and it can never be used to hurt you.'</br> —Tyrion",
-                    "'Any man who must say, ‘I am the king,’ is no true king. I’ll make sure you understand that when I’ve won your war for you.'- Tywin",
-                    "'The things I do for love.'—Jaime",
-                    "'That’s what I do: I drink and I know things.' —Tyrion"
-                ],  
+                    ['./static/photos/logo/baratheon-logo.png','#ffe147'],
+                    ["'Killing things clears my head.'","-Robert Baratheon"],
+                    ["'I never loved my brothers. Sad thing for a man to admit, but it's true. You were the brother I chose.'","-Robert Baratheon"],
+                    ["'I hate a good many things, but I suffer them all the same.'","-Stannis Baratheon"],
+                    ["'Go on, do your duty.'","-Stannis Baratheon"],
+                    ["'We march to victory or we march to defeat, but we go forward.'","- Stannis Baratheon"],
+                    ["'I don't care, you're my friend.'","-Shireen Baratheon"]
+                    ["'I will not become a page in someone else’s history book.'","-Stannis Baratheon"]
+                    
+                ],
+                [
+                    ['./static/photos/logo/targaryen-logo.png','#000'],
+                    ["'A mother does not flee without her children.'", "-Daenerys Targaryen"],
+                    ["'Yes. All men must die, but we are not men.'", "-Daenerys Targaryen"],
+                    ["'I will answer injustice with justice.'", "-Daenerys Targaryen"],
+                    ["'I'm not going to stop the wheel... I'm going to break the wheel!'", "-Daenerys Targaryen"]
+                ],
+                [
+                    ['./static/photos/logo/arryn-logo.png','#121745'],
+                    ["'Mummy, I want to see the bad man fly.'","-Robin Arryn"],
+                    ["'I wanted to make the little Lannister baby man fly, but Mother said I couldn't.'","-Robin Arryn"],
+                    ["'She's my cousin... we should help her.'","-Robin Arryn"],
+
+                ],
+                [
+                    ['./static/photos/logo/greyjoy-logo.png','#000'],
+                    ["'I'm not fit to rule.'","-Theon Greyjoy"],
+                    ["'Are you afraid?,' 'Good. It means you're not stupid.'","-Theon Greyjoy"],
+                    ["'I would have taken you all the way to the Wall. I would have died to get you there.'","-Theon Greyjoy"],
+                    ["'I'm going to find my little brother and I'm going to bring him home.'","-Yara Greyjoy"],
+                    ["'Not for me... For Yara!'","-Theon Greyjoy"],
+                    ["'No man has ever died from bending his knee. He who kneels may rise again, blade in hand. He who will not kneel stays dead, stiff legs and all.'","-Balon Greyjoy"],
+                ],
+                [
+                    ["'./static/photos/logo/tyrell-logo.png'",'#050'],
+                    ["'The trial can wait. We all need to leave.'" , "- Margaery Tyrell"],
+                    ["'You don't think I'd let you marry that beast, do you?'" , "- Olenna Tyrell"],
+                    ["'Sometimes severity is the price we pay for greatness.'" , "- Margaery Tyrell"],
+                    ["'Tell Cersei. I want her to know it was me.'" , "- Olenna Tyrell"],
+                    ["'The world is overflowing with horrible things, but they’re all a tray of cakes next to death.'" , "- Olenna Tyrell"],
+                ],
+                [
+                    ["'./static/photos/logo/lannister-logo.png'",'#e12812'],
+                    ["'Never forget what you are. The rest of the world will not. Wear it like armor, and it can never be used to hurt you.'", "- Tyrion Lannister"],
+                    ["'Any man who must say, ‘I am the king,’ is no true king. I’ll make sure you understand that when I’ve won your war for you.'", "- Tywin Lannister"],
+                    ["'The things I do for love.'", "—Jaime Lannister" ],
+                    ["'That’s what I do: I drink and I know things.'", "—Tyrion Lannister"],
+                    ["'When you play the game of thrones, you win or you die. There is no middle ground.'", "Cersei Lannister"],
+                    ["'Well, my brother has his sword, and I have my mind, and a mind needs books like a sword needs a whetstone.'", "Tyrion Lannister"],
+                    ["'Everyone who makes a joke about a dwarf’s height thinks he’s the only person ever to make a joke about a dwarf’s height.'", "— Tyrion Lannister"],
+                    ["'A lion doesn’t concern himself with the opinions of the sheep.'", "- Tywin Lannister"],    
+                ],
             ],
     firstTime = true,
     animate = 20,
-    animateneg = "-=10"
+    animateneg = "-=10",
+    qanimation = "-=12",
+    qset = "-=10.5",
+    repeatCount = 0,
+    arrayCount = 0,
+    randomIndex = 0 ;
+    qText = '',
+    qNameText = '',
+    logoUrl = '',
+    logoColor = ''
     
 
 
@@ -83,36 +144,52 @@ $(document).ready( ()=>{
 
     }
 
+    onRepeat = () => {
+        repeatCount++;
+        arrayCount++;
+        if(repeatCount < 9){
+            randomIndex = Math.floor(Math.random() * (quotes[repeatCount].length - 1) + 1);
+            qText = quotes[repeatCount][randomIndex][0];
+            qNameText = quotes[repeatCount][randomIndex][1];
+            logoUrl = quotes[repeatCount][0][0];
+            logoColor = quotes[repeatCount][0][1];
+            animation(qText, qNameText, logoUrl, logoColor);
+        }
+        else{
+            repeatCount = 0;
+            randomIndex = Math.floor(Math.random() * (quotes[repeatCount].length - 1) + 1);
+            qText = quotes[repeatCount][randomIndex][0];
+            qNameText = quotes[repeatCount][randomIndex][1];
+            logoUrl = quotes[repeatCount][0][0];
+            logoColor = quotes[repeatCount][0][1];
+            animation(qText, qNameText, logoUrl, logoColor);
+        }
+    }
 
     // Changing color and quotes animation.....
 
-    var bgcolor = new TimelineMax({paused:true, repeat: -1})
-        .to('.color', animate, {backgroundColor:"#e12812"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/martell-logo.png)'}, animateneg)
-        .to('.color', animate, {backgroundColor:"#00173d"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/tully-logo.png)'}, animateneg)
-        .to('.color', animate, {backgroundColor:"#ffe147"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/baratheon-logo.png)'}, animateneg)
-        .to('.color', animate, {backgroundColor:"#000"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/targaryen-logo.png)'}, animateneg)
-        .to('.color', animate, {backgroundColor:"#121745"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/arryn-logo.png)'}, animateneg)
-        .to('.color', animate, {backgroundColor:"#000"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/greyjoy-logo.png)'}, animateneg)
-        .to('.color', animate, {backgroundColor:"#050"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/tyrell-logo.png)'}, animateneg)
-        .to('.color', animate, {backgroundColor:"#e12812"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/lannister-logo.png)'}, animateneg)
-        .to('.color', animate, {backgroundColor:"#565656"})
-        .set('.logo',{backgroundImage:'url(./static/photos/logo/stark-logo.png)'}, animateneg);
+    animation = ()=>{
 
+        var bgcolor = new TimelineMax({paused:true, onComplete: onRepeat})
+            .to('.color', animate, {backgroundColor:logoColor})
+            .to('.quotes', 1,{autoAlpha: 0}, qanimation)
+            .to('.logo', 1, {autoAlpha:0}, qanimation)
+            .set('.q',{text:qText}, qset)
+            .set('.qName',{text:qNameText}, qset)
+            .set('.logo',{backgroundImage:`url(${logoUrl})`}, qset)
+            .to('.quotes', 1,{autoAlpha: 1},animateneg)
+            .to('.logo', 1, {autoAlpha:0.2}, animateneg)
+        bgcolor.play();
+
+    }
 
     setInterval(() => {
         (s % 20 === 0) ? zero=true: false;
         if(firstTime && zero){
-            bgcolor.play();
+            onRepeat();
             firstTime = false;
         }
-    }, interval);   
+    }, interval);
+
 
 })

@@ -23,19 +23,42 @@ body {
   padding: 2% 0%;
   text-align: center;
 }
+@media (max-width: 900px) {
+  .heading {
+    padding: 2% 0;
+  }
+}
 .heading .title, .heading .subtitle {
-  margin-top: 2%;
+  margin: 5vh 0;
 }
 .heading .title {
   font-weight: 100;
-}
-.heading .title a {
-  text-decoration: none;
-  color: white;
   letter-spacing: 0.5rem;
+}
+@media (max-width: 900px) {
+  .heading .title {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+}
+@media (min-width: 600px) and (orientation: portrait) {
+  .heading .title {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
 }
 .heading .subtitle {
   font-weight: 100;
+}
+@media (max-width: 900px) {
+  .heading .subtitle {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 600px) and (orientation: portrait) {
+  .heading .subtitle {
+    font-size: 1.2rem;
+  }
 }
 .heading h5 {
   letter-spacing: 0.2rem;
@@ -50,13 +73,37 @@ body {
 }
 .timer div {
   font-family: "Cormorant Unicase", serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   display: inline-block;
-  margin: 2%;
+  margin: 0 2%;
+}
+@media (max-width: 900px) {
+  .timer div {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 600px) and (orientation: portrait) {
+  .timer div {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  .timer div {
+    font-size: 4rem;
+  }
 }
 .timer .days, .timer .hours, .timer .minutes, .timer .seconds {
   max-width: 250px;
-  width: 250px;
+  min-width: 125px;
+  width: auto;
+}
+@media (min-width: 1200px) {
+  .timer .days, .timer .hours, .timer .minutes, .timer .seconds {
+    width: 250px;
+  }
+}
+.timer .small {
+  font-size: 1rem;
 }
 
 .logo {
@@ -72,6 +119,52 @@ body {
   background-position: center;
   z-index: -1;
   opacity: 0.2;
+}
+@media (max-width: 900px) {
+  .logo {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) and (orientation: landscape) {
+  .logo {
+    width: 25vw;
+    height: 25ve;
+  }
+}
+
+.quotes {
+  width: 100vw;
+  height: 35vh;
+  text-align: center;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 2rem;
+  padding: 1%;
+  position: relative;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .quotes {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 600px) and (orientation: portrait) {
+  .quotes {
+    font-size: 2rem;
+  }
+}
+.quotes div {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 75vw;
+  transform: translate(-50%, -50%);
+}
+.quotes div .q {
+  font-style: italic;
+}
+.quotes div .qName {
+  float: right;
 }
 
 /*# sourceMappingURL=got.css.map */
