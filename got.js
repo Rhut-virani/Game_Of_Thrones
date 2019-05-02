@@ -26,7 +26,7 @@ var quotes = [
                     ['./static/photos/logo/tully-logo.png','#00173d'],
                     ["'As long as I'm standing, the war is not over.'", "-Blackfish"],
                     ["'Bargaining with oathbreakers is like building on quicksand.'", "-Blackfish "],
-                    ["'I haven't had a proper swordfight in years. I expect I'll make a damn fool of myself.'", "-Blackfish"]
+                    ["'I haven't had a proper swordfight in years. I expect I'll make a damn fool of myself.'", "-Blackfish"],
                 
                 ],
                 [
@@ -36,8 +36,8 @@ var quotes = [
                     ["'I hate a good many things, but I suffer them all the same.'","-Stannis Baratheon"],
                     ["'Go on, do your duty.'","-Stannis Baratheon"],
                     ["'We march to victory or we march to defeat, but we go forward.'","- Stannis Baratheon"],
-                    ["'I don't care, you're my friend.'","-Shireen Baratheon"]
-                    ["'I will not become a page in someone else’s history book.'","-Stannis Baratheon"]
+                    ["'I don't care, you're my friend.'","-Shireen Baratheon"],
+                    ["'I will not become a page in someone else’s history book.'","-Stannis Baratheon"],
                     
                 ],
                 [
@@ -45,7 +45,7 @@ var quotes = [
                     ["'A mother does not flee without her children.'", "-Daenerys Targaryen"],
                     ["'Yes. All men must die, but we are not men.'", "-Daenerys Targaryen"],
                     ["'I will answer injustice with justice.'", "-Daenerys Targaryen"],
-                    ["'I'm not going to stop the wheel... I'm going to break the wheel!'", "-Daenerys Targaryen"]
+                    ["'I'm not going to stop the wheel... I'm going to break the wheel!'", "-Daenerys Targaryen"],
                 ],
                 [
                     ['./static/photos/logo/arryn-logo.png','#121745'],
@@ -188,7 +188,7 @@ $(document).ready( ()=>{
         bgcolor.play();
 
     }
-
+    // onRepeat();
     setInterval(() => {
         animatenumbers();
         (s % 20 === 0) ? zero=true: false;
