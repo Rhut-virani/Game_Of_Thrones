@@ -88,7 +88,7 @@ var quotes = [
     animateneg = "-=10",
     qanimation = "-=12",
     qset = "-=10.5",
-    repeatCount = 0,
+    repeatCount = Math.floor(Math.random() * (9 - 0) + 0),
     arrayCount = 0,
     randomIndex = 0 ;
     qText = '',
@@ -103,7 +103,7 @@ $(document).ready( ()=>{
 
     // Countdown timer
 
-    var eventTime = moment('05-05-2019 21:00:00', 'DD-MM-YYYY HH:mm:ss').unix(),
+    var eventTime = moment('12-05-2019 21:00:00', 'DD-MM-YYYY HH:mm:ss').unix(),
         currentTime = moment().unix(),
         diffTime = eventTime - currentTime,
         duration = moment.duration(diffTime * 1000, 'milliseconds'),
