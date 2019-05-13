@@ -103,7 +103,7 @@ $(document).ready( ()=>{
 
     // Countdown timer
 
-    var eventTime = moment('12-05-2019 21:00:00', 'DD-MM-YYYY HH:mm:ss').unix(),
+    var eventTime = moment('19-05-2019 21:00:00', 'DD-MM-YYYY HH:mm:ss').unix(),
         currentTime = moment().unix(),
         diffTime = eventTime - currentTime,
         duration = moment.duration(diffTime * 1000, 'milliseconds'),
