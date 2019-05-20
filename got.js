@@ -110,7 +110,6 @@ $(document).ready( ()=>{
         interval = 1000;
 
     // if time to countdown
-    console.log(diffTime);
     if(diffTime > 0) {
 
         // Show clock
