@@ -103,13 +103,14 @@ $(document).ready( ()=>{
 
     // Countdown timer
 
-    var eventTime = moment('19-05-2019 21:00:00', 'DD-MM-YYYY HH:mm:ss').unix(),
+    var eventTime = moment('19-05-2019 22:25:00', 'DD-MM-YYYY HH:mm:ss').unix(),
         currentTime = moment().unix(),
-        diffTime = eventTime - currentTime,
+        diffTime = currentTime - eventTime,
         duration = moment.duration(diffTime * 1000, 'milliseconds'),
         interval = 1000;
 
     // if time to countdown
+    console.log(diffTime);
     if(diffTime > 0) {
 
         // Show clock
@@ -125,7 +126,7 @@ $(document).ready( ()=>{
 
         setInterval(function(){
 
-            duration = moment.duration(duration.asMilliseconds() - interval, 'milliseconds');
+            duration = moment.duration(duration.asMilliseconds() + interval, 'milliseconds');
             var d = moment.duration(duration).days(),
                 h = moment.duration(duration).hours(),
                 m = moment.duration(duration).minutes();
