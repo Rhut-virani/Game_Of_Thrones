@@ -108,7 +108,6 @@ $(document).ready( ()=>{
         diffTime = currentTime - eventTime,
         duration = moment.duration(diffTime * 1000, 'milliseconds'),
         interval = 1000;
-
     // if time to countdown
     if(diffTime > 0) {
 
@@ -126,11 +125,10 @@ $(document).ready( ()=>{
         setInterval(function(){
 
             duration = moment.duration(duration.asMilliseconds() + interval, 'milliseconds');
-            var d = moment.duration(duration).days(),
+            var d = Math.floor(moment.duration(duration).asDays()),
                 h = moment.duration(duration).hours(),
                 m = moment.duration(duration).minutes();
                 s = moment.duration(duration).seconds();
-
             d = $.trim(d).length === 1 ? '0' + d : d;
             h = $.trim(h).length === 1 ? '0' + h : h;
             m = $.trim(m).length === 1 ? '0' + m : m;
