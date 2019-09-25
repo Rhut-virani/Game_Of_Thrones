@@ -1,8 +1,8 @@
-# GOT_Countdown
+# GOT_Countdown 
 
 <p align="center">Html Css JavaScript</p>
 
-A countdown for Game of Thrones with Quotes from the show.
+A countdown for Game of Thrones with Quotes from the show. - https://game-of-throne-countdown.herokuapp.com/got.html
 
 ## Built for the anticipation, Stayed for the memories
 
